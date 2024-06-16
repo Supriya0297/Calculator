@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+}
+
+.res {
+
+    background-color: rgb(34, 34, 34);
+    height: 100vh;
+    border-right: 1px solid white;
+    flex: 4;
+}
+
+.his {
+    background-color: rgb(34, 34, 34);
+    flex: 1;
+}
+
+#display {
+    color: white;
+    height: 150px;
+    width: 90%;
+    background-color: rgb(34, 34, 34);
+    margin-top: 50px;
+    margin-left: 43px;
+    margin-right: 43px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 25px;
+    text-align: right;
+    font-size: 55px;
+    padding: 20px;
+    display: inline-block;
+}
+
+.but1 {
+    text-align: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.invisible {
+    display: none;
+}
+
+.but2 {
+    display: grid;
+    height: 10vh;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+button {
+    margin-bottom: 5px;
+    margin-left: 5px;
+    padding: 1.5%;
+    border-style: solid;
+    border: 2px black;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 10px;
+    background-color: rgb(50, 50, 50);
+    color: white;
+}
+
+sup {
+    font-size: 10px;
+}
+
+button:hover {
+    background-color: rgb(60, 60, 60);
+}
+
+.top {
+    color: white;
+    margin: 10px;
+    font-size: 20px;
+    border-bottom: solid 2px;
+    text-align: center;
+}
+
+.ans::-webkit-scrollbar {
+    width: 0;
+}
+
+.ans {
+    color: white;
+    margin: 10px;
+    font-size: 20px;
+    height: 100%;
+}
+
+.his {
+    overflow: auto;
+}
+
+.his::-webkit-scrollbar {
+    width: 0;
+}
+
+#result {
+    background-color: rgb(97, 163, 213);
+}
