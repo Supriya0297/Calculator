@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cal.css">
+    <script src="cal.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="res">
+            <div class="res1">
+                <input type="text" name="display" id="display">
+            </div>
+
+            <div class="but1">
+                <div class="but2">
+                    <button class="but" onclick="swi()">2nd</button>
+                    <button class="but" onclick="Clear()">CE</button>
+                    <button class="but" onclick="Clear()">C</button>
+                    <button class="but" onclick="Backspace()">&#8592</button>
+                </div>
+
+                <div class="section1">
+                    <div class="but2">
+                        <button class="but" onclick="inverse()">1/x</button>
+                        <button class="but" onclick="sq()">x<sup>2</sup></button>
+                        <button class="but" onclick="sqr()">&#x221A</button>
+                        <button class="but" onclick="Solve('/')">&#247</button>
+                    </div>
+                    <div class="but2">
+                        <button class="but" onclick="Solve('7')">7</button>
+                        <button class="but" onclick="Solve('8')">8</button>
+                        <button class="but" onclick="Solve('9')">9</button>
+                        <button class="but" onclick="Solve('*')">&#xD7</button>
+                    </div>
+                    <div class="but2">
+                        <button class="but" onclick="Solve('4')">4</button>
+                        <button class="but" onclick="Solve('5')">5</button>
+                        <button class="but" onclick="Solve('6')">6</button>
+                        <button class="but" onclick="Solve('-')">&#8722</button>
+                    </div>
+                    <div class="but2">
+                        <button class="but" onclick="Solve('1')">1</button>
+                        <button class="but" onclick="Solve('2')">2</button>
+                        <button class="but" onclick="Solve('3')">3</button>
+                        <button class="but" onclick="Solve('+')">+</button>
+                    </div>
+                    <div class="but2">
+                        <button class="but" onclick="Solve('%')">%</button>
+                        <button class="but" onclick="Solve('0')">0</button>
+                        <button class="but" onclick="Solve('.')">.</button>
+                        <button class="but" id="result" onclick="Result()">=</button>
+                    </div>
+                </div>
+
+                <div class="section2  invisible">
+
+                    <div class="but2">
+                        <button class="but" onclick="s()">sin</button>
+                        <button class="but" onclick="si()">sin<sup>-1</sup></button>
+                        <button class="but" onclick="c()">cos</button>
+                        <button class="but" onclick="ci()">cos<sup>-1</sup></button>
+                    </div>
+                    <div class="but2">
+                        <button class="but" onclick="Solve('7')">7</button>
+                        <button class="but" onclick="Solve('8')">8</button>
+                        <button class="but" onclick="Solve('9')">9</button>
+                        <button class="but" onclick="tan()">tan</button>
+                    </div>
+                    <div class="but2">
+                        <button class="but" onclick="Solve('4')">4</button>
+                        <button class="but" onclick="Solve('5')">5</button>
+                        <button class="but" onclick="Solve('6')">6</button>
+                        <button class="but" onclick="ti()">tan<sup>-1</sup></button>
+                    </div>
+                    <div class="but2">
+                        <button class="but" onclick="Solve('1')">1</button>
+                        <button class="but" onclick="Solve('2')">2</button>
+                        <button class="but" onclick="Solve('3')">3</button>
+                        <button class="but" onclick="ex()">e<sup>x</sup></button>
+                    </div>
+                    <div class="but2">
+                        <button class="but" onclick="lg()">log</button>
+                        <button class="but" onclick="Solve('0')">0</button>
+                        <button class="but" onclick="Solve('.')">.</button>
+                        <button class="but" id="result" onclick="Result()">=</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="his">
+            <div class="top">Result</div>
+            <div class="ans" id="ans"></div>
+        </div>
+    </div>
+</body>
+
+</html>
